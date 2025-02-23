@@ -131,7 +131,7 @@ references employees(emp_id);
 alter table return_status
 add foreign key (issued_id)
 references issue_status(issued_id);
-```
+
 
 ### 2. CRUD Operations
 
@@ -177,7 +177,7 @@ select * from issue_status;
 select count(*), issued_emp_id from issue_status
 group by 2
 having count(*)>1;
-
+```
 ## Reports
 
 - **Database Schema**: Detailed table structures and relationships.
